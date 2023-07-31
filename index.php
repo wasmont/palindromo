@@ -24,7 +24,7 @@
         
         function textoReverso(String $texto) : String {
 
-            $textoTratado = trim($texto);
+            $textoTratado = strtolower(trim($texto));
             if (strrev($textoTratado) == $textoTratado){ 
                 return "O texto informado: $texto <br>SIM é um Palíndromo"; 
             }
